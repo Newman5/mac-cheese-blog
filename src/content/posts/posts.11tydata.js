@@ -14,6 +14,21 @@
  * 3. Auto-generate from title using slugify filter: /blog/{slug}/
  * 4. Posts without title or permalink are not published
  */
+
+// Simple slugify function
+function slugify(value) {
+  if (!value) return '';
+  return value
+    .toString()
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, '-')        // Replace spaces with -
+    .replace(/[^\w\-]+/g, '')    // Remove all non-word chars
+    .replace(/\-\-+/g, '-')      // Replace multiple - with single -
+    .replace(/^-+/, '')          // Trim - from start of text
+    .replace(/-+$/, '');         // Trim - from end of text
+}
+
 export default {
   eleventyComputed: {
     // Generate permalink URLs for blog posts
@@ -29,7 +44,7 @@ export default {
 
       // If no permalink is provided, generate permalink from title using slugify filter
       if (data.title) {
-        const slug = data.eleventy.env.filters.slugify(data.title);
+        const slug = slugify(data.title);
         return `/blog/${slug}/`;
       }
 

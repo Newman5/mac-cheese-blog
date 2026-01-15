@@ -4,7 +4,7 @@
 */
 
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
-// import reusableComponents from "eleventy-plugin-reusable-components";
+import reusableComponents from "eleventy-plugin-reusable-components";
 
 export default {
   /**
@@ -31,19 +31,19 @@ export default {
    * ZeroPoint Reusable Components plugin
    * https://github.com/MWDelaney/eleventy-plugin-reusable-components
    */
-  // async reusableComponents (eleventyConfig) {
-  //   // Add plugin to eleventyConfig
-  //   eleventyConfig.addPlugin(reusableComponents, {
-  //     componentsDir: "src/assets/components/*.njk"
-  //   });
+  async reusableComponents (eleventyConfig) {
+    // Add plugin to eleventyConfig
+    eleventyConfig.addPlugin(reusableComponents, {
+      componentsDir: "src/assets/components/*.njk"
+    });
 
-  //   // Register CSS and JS component bundles
-  //   eleventyConfig.addBundle("componentCss", {
-  //     toFileDirectory: "assets/styles/",
-  //   });
+    // Register CSS and JS component bundles
+    eleventyConfig.addBundle("componentCss", {
+      toFileDirectory: "assets/styles/",
+    });
 
-  //   eleventyConfig.addBundle("componentJs", {
-  //     toFileDirectory: "assets/scripts/",
-  //   });
-  // }
+    eleventyConfig.addBundle("componentJs", {
+      toFileDirectory: "assets/scripts/",
+    });
+  }
 };

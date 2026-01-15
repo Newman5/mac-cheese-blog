@@ -26,5 +26,14 @@ export default {
     let config = { 'src/assets/images': 'assets/images' }
 
     eleventyConfig.addPassthroughCopy(config);
+  },
+
+  /**
+   * Copy admin files to the `public` directory for Sveltia CMS
+   */
+  async admin(eleventyConfig) {
+    const config = { 'src/content/admin': 'admin' };
+
+    eleventyConfig.addPassthroughCopy(config);
   }
 };
