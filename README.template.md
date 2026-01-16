@@ -1,16 +1,16 @@
-# 🪐mac-cheese-blog Starter
+# 🪐TheMacAndCheeseBlog Starter
 ![starter-logo](https://github.com/user-attachments/assets/86aa94e9-88a9-4902-a622-b74f8e4216ea)
 
 👉 Get your website project up to zero.
 
-<a href="https://github.com/copilot-swe-agent[bot]/mac-cheese-blog/generate">
+<a href="https://github.com/Newman/TheMacAndCheeseBlog/generate">
   <img src="https://img.shields.io/badge/use%20this-template-blueviolet?logo=github&style=for-the-badge" alt="Use this template">
 </a>
 
 ---
 **⭐ If you just used this template repository ⭐**
 
-Prepare your repository for use by removing mac-cheese-blog branding and replacing it with your own project name and description.
+Prepare your repository for use by removing TheMacAndCheeseBlog branding and replacing it with your own project name and description.
 
 <details>
 <summary>1. Allow GitHub Actions to write to your repository</summary>
@@ -22,10 +22,10 @@ Prepare your repository for use by removing mac-cheese-blog branding and replaci
 </details>
 
 <details>
-<summary>2. Run the "Remove mac-cheese-blog branding" action</summary>
+<summary>2. Run the "Remove TheMacAndCheeseBlog branding" action</summary>
 
 1. Click the "Actions" tab in the top navigation of your repository
-2. Click the "Remove mac-cheese-blog branding" workflow
+2. Click the "Remove TheMacAndCheeseBlog branding" workflow
 3. Click the "Run workflow" button, choose the `main` branch, and click the green "Run workflow" button
 </details>
 
@@ -43,9 +43,9 @@ Prepare your repository for use by removing mac-cheese-blog branding and replaci
 
 ## Get started: Use This Template
 
-Start your project with mac-cheese-blog by clicking the "Use this template" button below:
+Start your project with TheMacAndCheeseBlog by clicking the "Use this template" button below:
 
-<a href="https://github.com/copilot-swe-agent[bot]/mac-cheese-blog/generate">
+<a href="https://github.com/Newman/TheMacAndCheeseBlog/generate">
   <img src="https://img.shields.io/badge/use%20this-template-blueviolet?logo=github&style=for-the-badge" alt="Use this template">
 </a>
 
@@ -88,7 +88,7 @@ Choose your preferred deployment platform:
 
 ### Deploy to GitHub Pages
 
-Deploy your mac-cheese-blog site for **free** with GitHub Pages:
+Deploy your TheMacAndCheeseBlog site for **free** with GitHub Pages:
 
 1. Push your code to a GitHub repository
 2. Go to your repository Settings > Pages
@@ -102,12 +102,12 @@ Deploy your mac-cheese-blog site for **free** with GitHub Pages:
 
 ### Deploy to Netlify
 
-Deploy mac-cheese-blog to [Netlify](https://netlify.com) for **free**!
+Deploy TheMacAndCheeseBlog to [Netlify](https://netlify.com) for **free**!
 
 1. Fork or create a new repository from this template
 2. Connect your repository to Netlify or use the deploy button below:
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/copilot-swe-agent[bot]/mac-cheese-blog/)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Newman/TheMacAndCheeseBlog/)
 
  </details>
 
@@ -116,7 +116,7 @@ Deploy mac-cheese-blog to [Netlify](https://netlify.com) for **free**!
 
 ### Deploy to Cloudflare Pages
 
-Deploy mac-cheese-blog to [Cloudflare Pages](https://pages.cloudflare.com/) for global edge performance:
+Deploy TheMacAndCheeseBlog to [Cloudflare Pages](https://pages.cloudflare.com/) for global edge performance:
 
 1. Fork or create a new repository from this template
 2. Connect your repository to Cloudflare Pages
@@ -127,7 +127,7 @@ Deploy mac-cheese-blog to [Cloudflare Pages](https://pages.cloudflare.com/) for 
 
 ## Optional Features
 
-mac-cheese-blog includes additional features that are disabled by default. Enable them when you need them:
+TheMacAndCheeseBlog includes additional features that are disabled by default. Enable them when you need them:
 
 ### 📝 Blog System
 
@@ -143,7 +143,7 @@ mac-cheese-blog includes additional features that are disabled by default. Enabl
 
 ### 🧩 Component System
 
-* Reusable components via [eleventy-plugin-reusable-components](https://github.com/copilot-swe-agent[bot]/eleventy-plugin-reusable-components)
+* Reusable components via [eleventy-plugin-reusable-components](https://github.com/Newman/eleventy-plugin-reusable-components)
 * Enable by uncommenting the plugin in `src/config/plugins.js`
 
 *See the [CHANGELOG](CHANGELOG.md) for complete details on these features.*
@@ -151,7 +151,7 @@ mac-cheese-blog includes additional features that are disabled by default. Enabl
 ## Project Structure
 
 ```text
-example.com                 # → Root of your mac-cheese-blog project
+example.com                 # → Root of your TheMacAndCheeseBlog project
 ├── content/                # → Site content
 │   ├── pages/              # → Site pages (Markdown/HTML)
 │   ├── posts/              # → Blog posts (disabled by default)
@@ -189,6 +189,6 @@ example.com                 # → Root of your mac-cheese-blog project
 │       └── navigation.json # → Site navigation structure
 ├── public/                 # → Built site (generated)
 ├── .eleventy.js            # → Core Eleventy config file
-├── README.mac-cheese-blog.md     # → Template documentation
+├── README.TheMacAndCheeseBlog.md     # → Template documentation
 └── README.md               # → Project readme
 ```

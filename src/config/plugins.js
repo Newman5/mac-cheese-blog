@@ -28,8 +28,8 @@ export default {
   },
 
   /**
-   * mac-cheese-blog Reusable Components plugin
-   * https://github.com/copilot-swe-agent[bot]/eleventy-plugin-reusable-components
+   * TheMacAndCheeseBlog Reusable Components plugin
+   * https://github.com/Newman/eleventy-plugin-reusable-components
    */
   async reusableComponents (eleventyConfig) {
     // Add plugin to eleventyConfig

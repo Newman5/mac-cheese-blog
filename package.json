@@ -1,7 +1,7 @@
 {
-  "name": "mac-cheese-blog",
+  "name": "TheMacAndCheeseBlog",
   "version": "2026.1",
-  "description": "",
+  "description": "It's not about Mac and Cheese.  except sometimes.  It is a blog",
   "type": "module",
   "main": "index.html",
   "scripts": {
@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+project_urlname"
   },
-  "author": "copilot-swe-agent[bot]",
+  "author": "MWDelaney",
   "license": "MIT",
   "browserslist": [
     "last 2 versions"
