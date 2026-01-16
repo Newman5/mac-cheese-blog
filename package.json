@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+project_urlname"
   },
-  "author": "Newman",
+  "author": "MWDelaney",
   "license": "MIT",
   "browserslist": [
     "last 2 versions"

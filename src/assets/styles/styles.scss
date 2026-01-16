@@ -10,33 +10,58 @@
 body {
   color: var(--color-text);
   background-color: var(--color-background);
+  font-family: var(--font-family-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-sans-serif);
+  font-weight: 900;
+  color: var(--color-primary);
 }
 
 a {
   color: var(--color-primary);
+  font-weight: bold;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 #main {
   max-width: var(--container-width);
   margin: calc(var(--unit) * 5) auto;
+  background-color: var(--color-white);
+  padding: calc(var(--unit) * 2);
+  border-radius: calc(var(--unit) / 2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #navigation {
   display: flex;
-  border-bottom: 1px solid var(--color-light);
+  border-bottom: 3px solid var(--color-primary);
   margin: var(--unit);
+  background-color: var(--color-white);
+  border-radius: calc(var(--unit) / 4);
+  padding: calc(var(--unit) / 4);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #footer {
   margin: auto;
   max-width: var(--container-width);
-  border-top: 1px solid var(--color-light);
+  border-top: 3px solid var(--color-primary);
   text-align: center;
+  background-color: var(--color-white);
+  padding: var(--unit);
+  border-radius: calc(var(--unit) / 4);
+  font-weight: bold;
 }
 
 hr {
-  border-color: var(--color-light);
+  border-color: var(--color-primary);
+  border-width: 2px;
 }
 
 img {
@@ -47,6 +72,10 @@ img {
 .navigation-label,
 button {
   padding: calc(var(--unit) / 2);
+}
+
+.navigation-item {
+  font-weight: bold;
 }
 
 .visually-hidden {
@@ -68,8 +97,18 @@ textarea {
 
 button {
   margin: 0;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: var(--color-accent);
+  }
 }
 
 label {
   padding: calc(var(--unit) / 2) 0;
+  font-weight: bold;
 }
