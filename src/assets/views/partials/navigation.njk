@@ -6,7 +6,7 @@
     {#- Set attributes and classes to blank to start -#}
     {%- set relAttribute = '' -%}
     {%- set currentAttribute = '' -%}
-    {%- set itemUrl = item.url -%}
+    {%- set itemUrl = item.url if item.external else (item.url | url) -%}
     {%- set target = '' -%}
     {%- set active = '' -%}
     {%- set hasSubmenu = '' -%}
