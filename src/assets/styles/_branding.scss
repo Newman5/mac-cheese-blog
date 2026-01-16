@@ -37,5 +37,6 @@
   @media (prefers-color-scheme: dark) {
     --color-text: #1a1a1a;
     --color-background: #FDB913;
+    /* Keep the bright Kraft yellow theme even in dark mode for brand consistency */
   }
 }
