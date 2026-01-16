@@ -26,6 +26,8 @@ runs:
     # Build the site
     - name: 🏗️ Build Site
       shell: bash
+      env:
+        PATH_PREFIX: /mac-cheese-blog/
       run: npm run production
 
     # Upload the public directory as an artifact

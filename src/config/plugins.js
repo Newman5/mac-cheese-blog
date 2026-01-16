@@ -12,10 +12,13 @@ export default {
    * https://www.11ty.dev/docs/plugins/image/
    */
   async image (eleventyConfig) {
+    // Get pathPrefix from environment or default to '/'
+    const pathPrefix = process.env.PATH_PREFIX || '/';
+    
     // Add plugin to eleventyConfig
     eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
       outputDir: 'public/assets/images',
-      urlPath: '/assets/images/',
+      urlPath: `${pathPrefix}assets/images/`.replace(/\/+/g, '/'),
       extensions: 'html',
       formats: ['auto'],
 

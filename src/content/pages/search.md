@@ -10,14 +10,14 @@ This page displays search results powered by [Pagefind](https://pagefind.app/).
   </noscript>
 </div>
 
-<script type="module" src="/assets/search/pagefind.js"></script>
-<script type="module" src="/assets/search/pagefind-ui.js"></script>
+<script type="module" src="{{ '/assets/search/pagefind.js' | url }}"></script>
+<script type="module" src="{{ '/assets/search/pagefind-ui.js' | url }}"></script>
 <script type="module">
   window.addEventListener('DOMContentLoaded', () => {
     new PagefindUI({
       element: '#search',
       showSubResults: true,
-      bundlePath: '/assets/search/'
+      bundlePath: '{{ '/assets/search/' | url }}'
     }).triggerSearch(new URL(window.location.href).searchParams.get('s'));
   });
 </script>
