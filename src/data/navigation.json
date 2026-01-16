@@ -6,13 +6,18 @@
       "external": false
     },
     {
+      "text": "About",
+      "url": "/about/",
+      "external": false
+    },
+    {
       "text": "Search",
       "url": "/search/",
       "external": false
     },
     {
-      "text": "Get ZeroPoint",
-      "url": "https://getzeropoint.com",
+      "text": "Get mac-cheese-blog",
+      "url": "https://getmac-cheese-blog.com",
       "external": true
     }
   ]
