@@ -15,10 +15,16 @@ export default {
     // Get pathPrefix from environment or default to '/'
     const pathPrefix = process.env.PATH_PREFIX || '/';
     
+    // Normalize path: ensure it starts with / and ends with /
+    const normalizedPrefix = pathPrefix.startsWith('/') ? pathPrefix : `/${pathPrefix}`;
+    const urlPath = normalizedPrefix.endsWith('/') 
+      ? `${normalizedPrefix}assets/images/` 
+      : `${normalizedPrefix}/assets/images/`;
+    
     // Add plugin to eleventyConfig
     eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
       outputDir: 'public/assets/images',
-      urlPath: `${pathPrefix}assets/images/`.replace(/\/+/g, '/'),
+      urlPath: urlPath,
       extensions: 'html',
       formats: ['auto'],
 
